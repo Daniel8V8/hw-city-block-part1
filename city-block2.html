@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>City Block | CSS</title>
+    <style>
+      body {
+        background-color: #333;
+        margin: 50px;
+      }
+      #city {
+        background-color: green;
+        width: 500px;
+        height: 500px;
+        border: 10px solid rgb(97, 44, 1);
+      }
+
+      .h-road {
+        background-color: rgb(52, 52, 52);
+        width: 500px;
+        height: 60px;
+        margin: 204px 0px 0px 0px;
+      }
+      .middle-band-h {
+        border-bottom: 3px double white;
+        width: inherit;
+        height: 27px;
+      }
+      .top-band-h {
+        border-bottom: 2px dotted white;
+        width: inherit;
+        height: 13px;
+      }
+      .bottom-band-h {
+        border-bottom: 2px dotted white;
+        width: inherit;
+        height: 42px;
+      }
+
+      .v-road {
+        background-color: rgb(52, 52, 52);
+        width: 60px;
+        height: 500px;
+        margin-left: 220px;
+        margin-top: -264px;
+      }
+      .middle-band {
+        border-right: 3px double white;
+        width: 27px;
+        height: inherit;
+      }
+      .left-band {
+        border-right: 2px dotted white;
+        width: 13px;
+        height: inherit;
+      }
+      .right-band {
+        border-right: 2px dotted white;
+        width: 42px;
+        height: inherit;
+      }
+
+      #rotary {
+        background-color: green;
+        border: 5px solid white;
+        width: 150px;
+        height: 150px;
+        border-radius: 90px;
+        margin: -345px 0px 0px 170px;
+        position: absolute;
+      }
+      #rotary-road {
+        background-color: rgb(52, 52, 52);
+        width: 250px;
+        height: 250px;
+        border-radius: 150px;
+        margin: -390px 0px 0px 125px;
+      }
+      .middle-band-r {
+        border: 2px dotted white;
+        border-radius: 150px;
+        width: 200px;
+        height: 200px;
+        margin: 22px 0px 0px 23px;
+        position: absolute;
+      }
+      .top-band-r {
+        border: 2px dotted white;
+        border-radius: 150px;
+        width: 230px;
+        height: 230px;
+        margin: -16px 0px 0px -16px;
+        position: absolute;
+      }
+      .bottom-band-r {
+        border: 2px dotted white;
+        border-radius: 150px;
+        width: 170px;
+        height: 170px;
+        margin: 28px 0px 0px 27px;
+        position: absolute;
+      }
+      .park-right {
+        width: 200px;
+        height: 200px;
+
+        margin: 0px 0px 0px 0px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+      }
+      .park-left {
+        width: 200px;
+        height: 200px;
+
+        margin: 0px 0px 0px 290px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+      }
+      .park-right-b {
+        width: 200px;
+        height: 200px;
+
+        margin: 330px 0px 0px 0px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+      }
+      .park-left-b {
+        width: 200px;
+        height: 200px;
+
+        margin: 330px 0px 0px 290px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="city">
+      <div class="park-right">🌴 🌴 🌴 🌴 🌴 🌴 🌴 🌴 🌴 🌴</div>
+      <div class="park-left">🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲</div>
+      <div class="park-right-b">🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲 🌲</div>
+      <div class="park-left-b">🌳 🌳 🌳 🌳 🌳 🌳 🌳 🌳 🌳 🌳</div>
+      <div class="h-road">
+        <div class="middle-band-h">
+          <div class="top-band-h">
+            <div class="bottom-band-h"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="v-road">
+        <div class="middle-band">
+          <div class="left-band">
+            <div class="right-band"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rotary"></div>
+      <div id="rotary-road">
+        <div class="middle-band-r">
+          <div class="top-band-r">
+            <div class="bottom-band-r"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
